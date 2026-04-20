@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    container_name: store-intel-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+      - store_intel_db:/app/var
+    environment:
+      - DB_PATH=/app/var/store.db
+    restart: unless-stopped
+
+volumes:
+  store_intel_db:

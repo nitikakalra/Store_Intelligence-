@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.db
+var/
+yolov8n.pt
+data/events.jsonl
+.DS_Store
